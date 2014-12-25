@@ -3,7 +3,7 @@ package com.thoughtworks.siyuyan.module;
 import com.google.inject.Binder;
 import com.google.inject.Module;
 import com.thoughtworks.siyuyan.parser.ReachOffParser;
-import com.thoughtworks.siyuyan.domain.Parser;
+import com.thoughtworks.siyuyan.util.Parser;
 
 
 /**

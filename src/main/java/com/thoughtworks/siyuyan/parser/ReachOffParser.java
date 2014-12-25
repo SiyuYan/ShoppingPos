@@ -1,7 +1,7 @@
 package com.thoughtworks.siyuyan.parser;
 
 import com.thoughtworks.siyuyan.promotions.ReachOffPromotion;
-import com.thoughtworks.siyuyan.domain.Parser;
+import com.thoughtworks.siyuyan.util.Parser;
 
 import java.util.HashMap;
 import java.util.Map;

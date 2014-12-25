@@ -1,4 +1,4 @@
-package com.thoughtworks.siyuyan.domain;
+package com.thoughtworks.siyuyan.util;
 
 import java.io.*;
 import java.util.ArrayList;

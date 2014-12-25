@@ -19,7 +19,6 @@
       <groupId>junit</groupId>
       <artifactId>junit</artifactId>
       <version>3.8.1</version>
-      <scope>test</scope>
     </dependency>
     <dependency>
       <groupId>org.sonatype.sisu</groupId>
@@ -36,9 +35,6 @@
       <artifactId>sisu-guice</artifactId>
       <version>2.1.7</version>
     </dependency>
-
-
-
     <dependency>
       <groupId>com.google.inject</groupId>
       <artifactId>guice</artifactId>

@@ -18,7 +18,7 @@ public class ItemMap {
         return itemMap.get(barcode);
     }
 
-    public void setItemMap(List<Item> list) throws IOException {
+    public void setItemMap(List<Item> list) throws IOException {//list to map
         try {
             Iterator<Item> it = list.iterator();
             while (it.hasNext()) {

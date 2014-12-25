@@ -1,5 +1,7 @@
-package com.thoughtworks.siyuyan.domain;
+package com.thoughtworks.siyuyan.pos;
 
+import com.thoughtworks.siyuyan.domain.CartMap;
+import com.thoughtworks.siyuyan.domain.PromotionAdd;
 import com.thoughtworks.siyuyan.model.Cart;
 
 import java.util.Iterator;
@@ -8,7 +10,7 @@ import java.util.Iterator;
  * Created by Administrator on 2014/12/7.
  */
 public class Printer {
-    public void Print(PromotionAdd promotionadd, CartMap cart) {
+    public void print(PromotionAdd promotionadd, CartMap cart) {
         System.out.println("购物明细 （数量 单价 小计）");
         double beforeTotal = 0;
         double afterTotal = 0;

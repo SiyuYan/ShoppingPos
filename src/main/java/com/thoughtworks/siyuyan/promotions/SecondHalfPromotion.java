@@ -1,7 +1,7 @@
 package com.thoughtworks.siyuyan.promotions;
 
 import com.thoughtworks.siyuyan.model.Cart;
-import com.thoughtworks.siyuyan.domain.Promotion;
+import com.thoughtworks.siyuyan.util.Promotion;
 
 /**
  * Created by Administrator on 2014/12/7.

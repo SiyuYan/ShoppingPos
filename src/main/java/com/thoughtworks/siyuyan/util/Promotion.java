@@ -1,4 +1,4 @@
-package com.thoughtworks.siyuyan.domain;
+package com.thoughtworks.siyuyan.util;
 
 import com.thoughtworks.siyuyan.model.Cart;
 
@@ -6,5 +6,5 @@ import com.thoughtworks.siyuyan.model.Cart;
  * Created by Administrator on 2014/12/7.
  */
 public interface Promotion  {
-    public Cart calculate(Cart item);
+    public Cart calculate(Cart cart);
 }

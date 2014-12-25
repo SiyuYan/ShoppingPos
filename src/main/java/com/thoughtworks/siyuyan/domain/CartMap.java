@@ -12,24 +12,24 @@ import java.util.Map;
  */
 public class CartMap {
     private Map<String, Cart> cartMap = new HashMap<String, Cart>();
-    private ItemMap list;
+    private ItemMap itemMap;
 
-    public CartMap(ItemMap list) {
-        this.list = list;
+    public CartMap(ItemMap itemmap) {
+        this.itemMap = itemmap;
     }
 
-    public void setCartMap(List<Cart> itemList) {
+    public void setCartMap(List<Cart> itemList) {//list to map
         try {
             Iterator<Cart> it = itemList.iterator();
             while (it.hasNext()) {
-                Cart item = it.next();
-                Cart existItem = cartMap.get(item.getItem().getBarcode());
+                Cart cart = it.next();
+                Cart existItem = cartMap.get(cart.getItem().getBarcode());
 
-                int newNumber = item.getNumber() + (existItem == null ? 0 : existItem.getNumber());
-                double price = list.getItem(item.getItem().getBarcode()).getPrice();
+                Cart newCart = new Cart(cart.getItem().getBarcode(),
+                        itemMap.getItem(cart.getItem().getBarcode()).getPrice(),
+                        cart.getNumber() + (existItem == null ? 0 : existItem.getNumber()));
 
-                Cart newItem = new Cart(item.getItem().getBarcode(), price, newNumber);
-                cartMap.put(item.getItem().getBarcode(), newItem);
+                cartMap.put(cart.getItem().getBarcode(), newCart);
             }
         } catch (Exception ex) {
             ex.printStackTrace();

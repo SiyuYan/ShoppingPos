@@ -1,7 +1,7 @@
 package com.thoughtworks.siyuyan.parser;
 
 import com.thoughtworks.siyuyan.model.Item;
-import com.thoughtworks.siyuyan.domain.Parser;
+import com.thoughtworks.siyuyan.util.Parser;
 
 /**
  * Created by Administrator on 2014/11/23.
